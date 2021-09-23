@@ -11,12 +11,10 @@ let workoutSeed = [
     day: new Date().setDate(new Date().getDate()-10),
     exercises: [
       {
-        type: "resistance",
-        name: "Bicep Curl",
-        duration: 20,
-        weight: 100,
-        reps: 10,
-        sets: 4
+        type: "cardio",
+        name: "Running",
+        duration: 25,
+        distance: 4
       }
     ]
   },
@@ -25,7 +23,7 @@ let workoutSeed = [
     exercises: [
       {
         type: "resistance",
-        name: "Lateral Pull",
+        name: "Military Press",
         duration: 20,
         weight: 300,
         reps: 10,
@@ -50,10 +48,12 @@ let workoutSeed = [
     day: new Date().setDate(new Date().getDate()-7),
     exercises: [
       {
-        type: "cardio",
-        name: "Running",
-        duration: 25,
-        distance: 4
+        type: "resistance",
+        name: "Bicep Curl",
+        duration: 20,
+        weight: 100,
+        reps: 10,
+        sets: 4
       }
     ]
   },
@@ -114,7 +114,7 @@ let workoutSeed = [
     exercises: [
       {
         type: "resistance",
-        name: "Military Press",
+        name: "Lateral Pull",
         duration: 20,
         weight: 300,
         reps: 10,
