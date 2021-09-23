@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(
-    process.env.ATLAS_URI || "mongodb://localhost/fitness-tracker-akish777", 
+    process.env.MONGODB_URI || "mongodb://localhost/fitness-tracker-akish777", 
     {
         useNewUrlParser: true,
         useFindAndModify: false,
