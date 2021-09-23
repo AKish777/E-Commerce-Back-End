@@ -1,9 +1,9 @@
 let mongoose = require("mongoose");
-let db = require("../models");
+let db = require("../Models");
 let path = require("path")
 require('dotenv').config({ silent: true });
 
-mongoose.connect(process.env.ATLAS_URI, {
+mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useFindAndModify: false,
 });
