@@ -1,6 +1,6 @@
 module.exports = router;
 const router = require("express").Router();
-const Workout = require("../Models/workout");
+const Workout = require("../Models/Workout");
 
 router.put("/api/workouts/:id", (req,res) => {
     Workout.findByIdAndUpdate(
