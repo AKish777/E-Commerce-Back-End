@@ -2,7 +2,6 @@ module.exports = router;
 const router = require("express").Router();
 const Workout = require("../Models/workout");
 
-
 router.put("/api/workouts/:id", (req,res) => {
     Workout.findByIdAndUpdate(
         req.params.id, {$push: {exercises: req.body}}
